@@ -1,0 +1,240 @@
+.container-fluid {
+    background-color: #e7e7e7;
+    height: 100vh;
+}
+
+.main-header-right {
+    display: flex;
+    align-items: center;
+    padding: 10px 7px !important;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 10px #efefef;
+    position: relative;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.main-header-right .nav-right {
+    display: flex !important;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.form-switch {
+    padding-left: 3em;
+    padding-top: 10px;
+}
+
+.menuHr {
+    border-left: 1px solid #e7e7e7;
+}
+
+.gradient-primary-1 {
+    background-image: linear-gradient(#1693f8, #0d67e9);
+    color: #fff;
+    padding: 20px;
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: #158df7 !important;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    clear: both;
+    font-weight: 400;
+    color: var(--bs-dropdown-link-color);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-radius: var(--bs-dropdown-item-border-radius, 0);
+}
+
+// .logo-wrapper {
+//     margin-right: 10px;
+// }
+.user-header img {
+    box-shadow: 0 0 10px #00000026;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.userMenu {
+    justify-content: center;
+    margin-left: 20px
+}
+
+.txt-primary {
+    color: #158df7 !important;
+}
+
+.btn-primary {
+    background-color: #158df7 !important;
+}
+
+.btn-danger {
+    background-color: #ff3f70 !important;
+    border-color: #ff3f70 !important;
+    color: #fff;
+}
+
+.untn {
+    align-content: center;
+}
+
+.h6 {
+    font-size: 1rem;
+    align-content: center;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    border-bottom: 3px solid #e3e3e3;
+    border-right: 2px solid #e3e3e3;
+    background: #fff;
+}
+
+.nav-link:active {
+    color: #fff;
+    background-color: #158df7;
+}
+
+a {
+    color: #158df7;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.content-tabs a {
+    padding: 5px !important;
+}
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+    border: 1px solid #158df7 !important;
+    border-radius: 20px;
+    margin: 11px;
+}
+
+h5 {
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 1;
+    font-family: Nunito;
+    font-size: 1.25rem;
+}
+
+h5 a {
+    padding: .1rem 1rem;
+    opacity: .65;
+    font-size: 11px;
+    border: none;
+}
+
+.btnGroup {
+    text-align: end;
+
+    button {
+        font-size: 11px;
+        margin-right: .25rem !important;
+        padding: .1rem 1rem;
+    }
+
+    a {
+        color: #212529 !important;
+    }
+}
+
+.input-group-text {
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    color: #fff;
+}
+
+.input-group-prepend {
+    margin-right: -1px;
+    display: flex;
+}
+
+.form-group .col-form-label-sm {
+    font-size: .78rem;
+}
+
+.input-group-prepend span {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: .25rem .5rem;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: .25rem;
+    text-align: left;
+}
+
+.tooltipData {
+    display: grid;
+
+    span {
+        padding: 10px;
+    }
+}
+
+
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #158df7 !important;
+    padding: 5px 10px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    font-family: work-Sans, sans-serif;
+}
+
+code {
+    color: #158df7 !important;
+    background-color: #158df708;
+    padding: 3px;
+    margin: 0 3px;
+    border-radius: 2px;
+}
+
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: #212529;
+    background-color: #e8f4fe;
+    padding: .44em .7em;
+}

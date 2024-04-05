@@ -26,7 +26,7 @@ export class RegisterComponent {
   }
 
   onSubmit(): void {
-    // this.router.navigate(['/']);
+    this.router.navigate(['/']);
     if (this.registerForm.valid) {
       console.log('Form submitted successfully.');
       // You can add your form submission logic here

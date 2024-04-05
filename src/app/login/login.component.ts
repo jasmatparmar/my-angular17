@@ -24,6 +24,7 @@ export class LoginComponent {
   onSubmit(): void {
     if (this.loginForm.valid) {
       console.log('Form submitted successfully.');
+      this.router.navigate(['/dashboard']);
     } else {
       console.log('Form is invalid. Please fill all required fields.');
     }
