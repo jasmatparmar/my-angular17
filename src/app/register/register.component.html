@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <div class="row pageHead">
+        <div class="col-4 backimg2">
+            <div class="img">
+                <div class="img__text m--up">
+                  <div class="logo-wrapper text-center">
+                    <img class="blur-up lazyloaded" src="../../assets/Komsys_Web.png" alt="Demo Partner">
+                  </div>
+                </div>
+                <div class="img__btn ng-star-inserted">
+                  <span class="m--up" (click)="onLogin()">Login</span>
+                </div>
+              </div>
+        </div>
+        <div class="col-8">
+            <form [formGroup]="registerForm" novalidate (ngSubmit)="onSubmit()" class="theme-form" novalidate>
+                <h3 class="text-primary">Register</h3>
+                <div class="form-row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label class="col-form-label text-muted" for="instl_id_ks">InstID</label>
+                      <input formControlName="instl_id_ks" class="form-control form-control-md" placeholder="InstID">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label class="col-form-label text-muted" for="corp_id">CorpID</label>
+                      <input formControlName="corp_id" class="form-control form-control-md" placeholder="CorpID">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label class="col-form-label text-muted" for="client_code">ClientCode</label>
+                      <input formControlName="client_code" class="form-control form-control-md" placeholder="ClientCode">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label class="col-form-label text-muted" for="terminal_id">TerminalID</label>
+                      <input formControlName="terminal_id" class="form-control form-control-md" placeholder="TerminalID">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label class="col-form-label text-muted" for="host_name">HostName</label>
+                      <input formControlName="host_name" class="form-control form-control-md" placeholder="HostName">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label class="col-form-label text-muted" for="dflt_access_method">DfltAccessMethod</label>
+                      <div class="select2-drpdwn-product select-options">
+                        <select name="select" formControlName="dflt_access_method" class="form-control form-select btn-square form-control-md">
+                          <option value="USERID">UserID</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group"></div>
+                <div class="form-group mt-3">
+                  <button type="submit" class="btn btn-block btn-primary w-100"><i class="icofont icofont-login"></i> Register </button>
+                </div>
+              </form>
+              
+        </div>
+    </div>
+</div>
