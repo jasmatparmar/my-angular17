@@ -60,6 +60,10 @@
 // .logo-wrapper {
 //     margin-right: 10px;
 // }
+
+.btn.dropdown-toggle::after {
+    display: none !important;
+}
 .user-header img {
     box-shadow: 0 0 10px #00000026;
 }
@@ -237,4 +241,28 @@ code {
     color: #212529;
     background-color: #e8f4fe;
     padding: .44em .7em;
+}
+
+// .dropdown-menu.show{
+//     width: 60rem;
+// }
+
+.treeview-item {
+    border: 1px solid #007bff;
+}
+.treeview-item {
+    display: block !important;
+    width: 100%;
+    padding: 0 10px 5px;
+    margin-left: 0 !important;
+    border-radius: 5px;
+    font-weight: 700;
+    border-left-width: 5px !important;
+}
+.text-nowrap{
+    display: block !important;
+    width: 100%;
+    white-space: break-spaces!important;
+    font-size: 12px;
+    height: 30px;
 }

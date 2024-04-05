@@ -11,17 +11,95 @@
                         <div class="form-check form-switch menuHr">
                             <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
                         </div>
-                        <div ngbdropdown="" class="dropdown menuHr">
-                            <button type="button" data-toggle="dropdown" ngbdropdowntoggle="" class="btn"
-                                aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-align-justify">
-                                    <line x1="21" y1="10" x2="3" y2="10"></line>
-                                    <line x1="21" y1="6" x2="3" y2="6"></line>
-                                    <line x1="21" y1="14" x2="3" y2="14"></line>
-                                    <line x1="21" y1="18" x2="3" y2="18"></line>
-                                </svg></button>
+                        <div ngbdropdown class="dropdown menuHr">                          
+
+                            <div ngbDropdown class="d-inline-block menuHr">
+                                <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-align-justify">
+                                        <line x1="21" y1="10" x2="3" y2="10"></line>
+                                        <line x1="21" y1="6" x2="3" y2="6"></line>
+                                        <line x1="21" y1="14" x2="3" y2="14"></line>
+                                        <line x1="21" y1="18" x2="3" y2="18"></line>
+                                    </svg>
+                                </button>
+                                <div ngbDropdownMenu style="width: 60rem;" aria-labelledby="dropdownBasic1">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="d-block">
+                                                <ul ngbnav="" orientation="vertical"
+                                                    class="nav-pills mega-menu-item nav flex-column"
+                                                    aria-orientation="vertical" role="tablist">
+                                                    <li class="nav-item " style="padding: 0px !important;">
+                                                        <a href="" ngbnavlink="" id="ngb-nav-0" role="tab"
+                                                            aria-controls="ngb-nav-0-panel" aria-selected="true"
+                                                            aria-disabled="false" class="nav-link active">Inventory
+                                                            Management</a>
+                                                    </li>
+                                                    <li class="nav-item " style="padding: inherit;">
+                                                        <a href="" ngbnavlink="" id="ngb-nav-1" role="tab"
+                                                            aria-selected="false" aria-disabled="false"
+                                                            class="nav-link">Production Costing</a>
+                                                    </li>
+                                                    <li class="nav-item " style="padding: inherit;">
+                                                        <a conhref="" ngbnavlink="" id="ngb-nav-2" role="tab"
+                                                            aria-selected="false" aria-disabled="false"
+                                                            class="nav-link">Financial Accounting</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div id="quick-menu" class="custom-scrollbar tab-content"
+                                                style="width: 100%;">
+                                                <div class="tab-pane fade show active " id="ngb-nav-0-panel"
+                                                    role="tabpanel">
+                                                    <div class="row row-filter">
+                                                        <div class="row">
+                                                            <input type="text" class="form-control" placeholder="Filter">
+                                                        </div>
+                                                        <div class="row">
+                                                            <label class="form-check-label">
+                                                                <span>Masters and Setup Related</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <div class="treeview-item ">
+                                                                    <div class="text-nowrap row-item ">
+                                                                        <label class="form-check-label">
+                                                                            <span>UOM & Pack Setup</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="treeview-item ">
+                                                                    <div class="text-nowrap row-item ">
+                                                                        <label class="form-check-label">
+                                                                            <span> Warehouse(Store) & Stock Type Setup</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="treeview-item ">
+                                                                    <div class="text-nowrap row-item ">
+                                                                        <label class="form-check-label">
+                                                                            <span>Department Setup (Cost Center)</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="fullscrIcon menuHr">
                             <button type="button" data-toggle="dropdown" ngbdropdowntoggle="" class="btn"
@@ -234,7 +312,7 @@
                         <a placement="left" triggers="click" [ngbTooltip]="tipContent"
                             class="mr-1 btn btn-outline-muted btn-xs">Form
                             Details<i class="fa fa-info-circle"></i></a>
-                        <button id="po-on-save" class="mr-1 btn btn-primary btn-xs ng-star-inserted"> Save</button>
+                        <button id="po-on-save" class="mr-1 btn btn-primary btn-xs "> Save</button>
                         <button type="button" aria-controls="collapseExample" class="mr-1 btn btn-primary btn-xs"
                             aria-expanded="false"><i class="fa fa-bars"></i></button>
                         <button type="reset" class="mr-1 btn btn-danger btn-xs">Reset</button>
